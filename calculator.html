@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple calculator</title>
+    <style>
+        table{
+            padding:5px;
+            border: 1px solid black;
+        }
+        .monitor {
+            border: 1px solid black;
+            border-radius:10px;
+            font-size:1.15rem;
+            text-align: right;
+            height:3.5rem;
+            margin-bottom: 0.5rem;
+            margin-top:0.67rem;
+        }
+
+        .buttons {
+            border:1px solid black;
+            border-radius:5px;
+            width:2.5rem;
+            height:2.5rem;
+        }
+        td{
+            margin:0 0 0 0;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input class="monitor" type="text" id="monitor" size="15" disabled></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="buttons" id="1" value="1"></td>
+        <td><input type="button" class="buttons" id="2" value="2"></td>
+        <td><input type="button" class="buttons" id="3" value="3"></td>
+        <td><input type="button" class="buttons" id="add" value="+"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="buttons" id="4" value="4"></td>
+        <td><input type="button" class="buttons" id="5" value="5"></td>
+        <td><input type="button" class="buttons" id="6" value="6"></td>
+        <td><input type="button" class="buttons" id="subtract" value="-"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="buttons" id="7" value="7"></td>
+        <td><input type="button" class="buttons" id="8" value="8"></td>
+        <td><input type="button" class="buttons" id="9" value="9"></td>
+        <td><input type="button" class="buttons" id="multiply" value="×"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="buttons" id="clear" value="C"></td>
+        <td><input type="button" class="buttons" id="0" value="0"></td>
+        <td><input type="button" class="buttons" id="calculate" value="="></td>
+        <td><input type="button" class="buttons" id="divide" value="÷"></td>
+    </tr>
+
+    <script src="calculator.js"></script>
+</table>
+</body>
+</html>
